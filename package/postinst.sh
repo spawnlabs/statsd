@@ -14,6 +14,6 @@ chown -R $USER:$GROUP /opt/statsd
 
 ln -s /opt/statsd/debian/statsd.init /etc/init.d/statsd
 ln -s /opt/statsd /usr/share/statsd
-ln -s /opt/statsd/debian/localConfig.js /etc/stats/localConfig.js
+ln -s /opt/statsd/debian/localConfig.js /etc/statsd/localConfig.js
 
 #DEBHELPER#
