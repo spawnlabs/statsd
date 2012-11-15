@@ -22,7 +22,6 @@ fi
 # Make the required dirs
 mkdir -p target/src/opt/$PACKAGENM
 mkdir -p target/src/etc/$PACKAGENM
-mkdir -p target/src/etc/init.d
 mkdir -p target/deb
 
 echo "building $PACKAGENM debian using fpm"
