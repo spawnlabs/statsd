@@ -21,6 +21,6 @@ ln -fs /opt/statsd/exampleConfig.js /etc/statsd/localConfig.js
 ln -fs /opt/statsd/debian/scripts /opt/statsd/scripts
 
 # Force our own user instead of using 'nobody'
-sed -i 's/nobody/statsd/' /opt/statsd/debian/scripts/start
+sed -i 's/nobody/statsd/' /etc/init/statsd.conf
 
 #DEBHELPER#
