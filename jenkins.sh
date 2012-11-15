@@ -6,7 +6,7 @@ $SPAWNENV/bin/spawn-retrieve
 
 mkdir -p target/src/opt
 tar -xvf target/lib/default/statsd.tar.gz
-mv statsd* target/src/opt
+mv statsd* target/src/opt/statsd
 
 # create an ubuntu package
 echo "packaging statsd"
