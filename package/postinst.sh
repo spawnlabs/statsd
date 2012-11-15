@@ -12,9 +12,10 @@ mkdir -p /var/log/statsd
 chown -R $USER:$GROUP /etc/statsd
 chown -R $USER:$GROUP /opt/statsd
 
-rm -f /etc/init.statsd
-ln -s /opt/statsd/debian/statsd.init /etc/init.d/statsd
-ln -s /opt/statsd /usr/share/statsd
-ln -s /opt/statsd/debian/localConfig.js /etc/statsd/localConfig.js
+chmod 777 /opt/statsd/debian/scripts/start
+cp /opt/statsd/debian/statsd.upstart /etc/init/statsd.conf
+ln -fs /opt/statsd /usr/share/statsd
+ln -fs /opt/statsd/exampleConfig.js /etc/statsd/localConfig.js
+ln -fs /opt/statsd/debian/scripts /opt/statsd/scripts
 
 #DEBHELPER#

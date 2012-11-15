@@ -4,8 +4,7 @@ set -e
 
 if [ "$1" = "purge" ]
 then
-    rm -f /etc/init.d/statsd
-    rm -f /etc/statsd/localConfig.js
+    rm -f /etc/init/statsd.conf
     rm -rf /opt/statsd
     userdel statsd
 fi
