@@ -1,5 +1,5 @@
 #!/bin/sh
 
-stop statsd || true
+/etc/init.d/statsd stop  || true
 
 #DEBHELPER#
